@@ -6,6 +6,8 @@
     <meta name="description" content="FRONTED TRAINING: PHASE 02" />
     <meta name="author" content="Mimansa Deovrat Joshi" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
 
   <body>
@@ -13,7 +15,7 @@
       <h1>Web Standards Summit 2026</h1>
     </header>
 
-    <main>
+    <main class="main_section">
       <section id="intro">
         <p>
           September 18-20, 2026 <br />
@@ -26,9 +28,9 @@
           and inclusive web technologies.
         </p>
 
-        <nav>
+        <nav class="navigation">
           <ul>
-            <li><a href="#about">About the summit</a></li>
+            <li><a href="#about">About the Summit</a></li>
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#speakers">Speakers</a></li>
             <li><a href="#registration">Registration</a></li>
@@ -37,7 +39,7 @@
         </nav>
       </section>
 
-      <section id="about">
+      <section id="about" class="cards_class">
         <h2>About the Summit</h2>
         <p>
           Web Standards Summit 2026 focuses on practical techniques and emerging
@@ -47,7 +49,7 @@
 
         <h3>Key terms</h3>
 
-        <dl>
+        <dl id="description_list">
           <dt>HTML</dt>
           <dd>
             HyperText Markup Language, the standard markup language used to
@@ -69,15 +71,15 @@
         </dl>
       </section>
 
-      <section id="schedule">
+      <section id="schedule" class="cards_class">
         <h2>Conference Schedule</h2>
         <p>
           The summit spans three days of talks, workshops, and networking
           focused on modern web standards.
         </p>
 
-        <table>
-          <caption>
+        <table id="speakers_table">
+          <caption id="table_caption">
             Day 1 — Friday, September 18, 2026
           </caption>
 
@@ -90,7 +92,7 @@
             </tr>
           </thead>
 
-          <tbody>
+          <tbody class="table_body">
             <tr>
               <td>09:00-10:00</td>
               <td>Opening Keynote: The State of Web Standards</td>
@@ -129,10 +131,10 @@
         </table>
       </section>
 
-      <section id="speakers">
+      <section id="speakers" class="cards_class">
         <h2>Featured Speakers</h2>
 
-        <article>
+        <article id="speaker_1">
           <h3>Alex Rivera</h3>
           <p>
             Alex is a standards advocate and chair of several working groups,
@@ -148,7 +150,7 @@
           </ul>
         </article>
 
-        <article>
+        <article id="speaker_2">
           <h3>Priya Desai</h3>
           <p>
             Priya is a frontend architect focusing on semantic markup,
@@ -164,7 +166,7 @@
           </ul>
         </article>
 
-        <article>
+        <article id="speaker_3">
           <h3>Fatima Khan</h3>
 
           <p>
@@ -182,7 +184,7 @@
         </article>
       </section>
 
-      <section id="registration">
+      <section id="registration" class="cards_class">
         <h2>Registration</h2>
 
         <p>
@@ -190,8 +192,8 @@
           registration form below.
         </p>
 
-        <form method="post">
-          <fieldset>
+        <form method="post" class="registration_form">
+          <fieldset class="form_details">
             <legend>Attendee Information</legend>
 
             <p>
@@ -227,16 +229,16 @@
             </p>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="form_submit">
             <legend>Confirmation</legend>
             <p>
-              <button type="submit">Sumbit registration</button>
+              <button type="submit">Submit registration</button>
             </p>
           </fieldset>
         </form>
       </section>
 
-      <section id="contact">
+      <section id="contact" class="cards_class">
         <h2>Contact</h2>
 
         <p>
@@ -254,6 +256,8 @@
       </section>
     </main>
 
-    <footer>© 2026 Web Standards Summit. All rights reserved.</footer>
+    <footer id="footer">
+      © 2026 Web Standards Summit. All rights reserved.
+    </footer>
   </body>
 </html>
