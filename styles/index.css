@@ -1,0 +1,219 @@
+
+/*THIS IS NOT RESPONSIVE*/
+
+html{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:1%;
+    margin-bottom:1%;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*CSS FOR NAVIGATION*/
+.navigation ul{
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    width:55%;
+    margin-left:-11px;
+    
+}
+
+.navigation ul li{
+    list-style-type: none;
+    display: inline-block;
+    background-color: rgb(223, 238, 255);
+    padding: 12px 18px;
+    border-radius: 30px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+}
+
+
+/* MAIN SECTION THAT CONTAINS ALL OTHER SECTIONS WITHIN IT.*/
+.main_section .cards_class{
+    /* border: 2px solid black; */
+    padding:2%;
+    width:65%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+    position: relative;
+    padding-top: 20px;   
+}    
+
+/*ADDING THE GRADIENT LINE OF COLOR BEFORE EVERY H2 TAG*/
+/*IT IS NOT WORKING FOR THE FEATURED SPEAKERS*/
+#about::before,
+#speakers::before,
+#schedule::before,
+#registration::before{
+  content: "";
+  position: absolute;
+  top: 10;
+  left: 10;
+
+  width: 50px;
+  height: 5px;
+
+  background: linear-gradient(to right, #2563eb, #ef4444);
+  border-radius: 2px;
+}
+
+
+/*CHANGING MARGIN FOR DESCRIPTION LIST DATA*/
+#description_list dd{
+    margin-left: 0;
+}
+
+/* CSS FOR TABLE*/
+#speakers_table{
+    border-collapse: collapse;
+    width:100%;
+}
+
+#speakers_table thead tr th{
+    text-align: left;
+    background-color: rgb(218, 234, 255);
+    padding:10px;
+}
+
+#speakers_table #table_caption{
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom:5px;
+}
+
+#speakers_table .table_body tr:nth-child(even){
+    background-color: rgb(242, 250, 255);
+}
+
+#speakers_table .table_body tr:nth-child(odd){
+    background-color: rgb(255, 255, 255);
+}
+
+#speakers_table .table_body tr td{
+    padding: 10px;
+}
+
+/*CSS FOR FEATURED SPEAKERS*/
+#speakers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#speakers article{
+    border: 0.5px solid gray;
+    padding:3%;
+    border-radius: 10px;
+    
+    margin: 2.5%;
+    padding-left:5%;
+}
+
+#speakers h2{
+    text-align: right;
+    margin-right: 60px;
+}
+
+#speakers article:nth-child(2){
+    margin-left:-10%;
+}
+
+#speakers article h3{
+    padding-left:15px;
+}
+
+#speakers article ul li{
+    margin-left:-20px;
+}
+
+/*CSS FOR REGISTRATION FORM*/
+.registration_form fieldset{
+    font-weight: 700;
+
+    border-radius: 9px;
+    border-color: rgb(199, 199, 199);
+    border-width: 0.5px;
+
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+
+    margin-top: 3%;
+}
+
+.registration_form fieldset legend{
+    margin-left:7px;
+}
+
+.registration_form label{
+    font-weight:500;
+}
+
+.registration_form .form_details input[type="email"],
+.registration_form .form_details input[type="text"]{
+    margin-top: 8px;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+    width:93%;
+    padding: 10px;
+}
+
+.registration_form .form_details select{
+    margin-top: 8px;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+    width:96%;
+    padding: 10px;
+}
+
+
+.registration_form .form_submit button{
+    padding:12px 18px;
+    background-color: rgba(45, 93, 252, 0.949);
+
+    border: 0px;
+    border-radius: 30px;
+
+    color: whitesmoke;
+}
+
+/*CSS FOR CONTACT SECTION*/
+.main_section #contact{
+    position:absolute;
+    /*NOT A VERY GOOD METHOD TO MAKE IT LOOK LIKE THE REFERENCE, 
+    I HAVE A DOUBT WHICH METHOD TO USE HERE.
+    TRIED ALL KINDS OF POSITIONING. THERE MIGHT BE SOME ISSUE WITH MY INDEX.HTML.
+    IT IS ALSO POSSIBLE THAT I AM NOT POSITIONING THEM CORRECTLY.
+    */
+    top:1970px; 
+    left:1025px;
+
+    /*CHANGING THE WIDTH HERE SO THAT IT LOOKS LIKE THE REFERENCE IMAGE*/
+    width:14.5%;
+    margin-right:-40%;
+    
+}
+
+/*CSS FOR FOOTER*/
+#footer::before{
+    content:"";
+    display:block;
+    height:2px;
+    background-color:black;
+    opacity: 0.4;
+    margin-bottom:5px;
+}
+
+#footer::after{
+    content:"General Inquiries: hello@webstandardssummit.example";
+    margin-left:400px;
+    font-style: italic;
+    /*I HAVE ADDED THIS
+    BUT I AM NOT SURE IF WE CAN CHANGE THE COLOR OF THE SPECIFIC PART OF THE CONTENT*/
+}
