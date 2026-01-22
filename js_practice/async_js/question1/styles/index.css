@@ -1,0 +1,86 @@
+
+/* 
+    THIS CSS IS DONE JUST SO THAT THE PAGE LOOKS SOMEWHAT GOOD
+    THE WAY IT IS WRITTEN DOES NOT FOLLOW THE STANDARD PRACTICES LIKE GUESS WORK FOR THE VALUES FOR WIDTH ETC.
+*/
+
+/*font style for entire page*/
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* header */
+header{
+    padding: 1rem;
+}
+
+/* FORM CSS*/
+#myForm{
+    padding: 0.5rem;
+}
+
+#myForm fieldset{
+    box-shadow: 0rem 0rem 0.5rem 0.5rem #bebbbb4d;
+    border-radius: 0.5rem;
+}
+
+#myForm fieldset legend{
+    padding: 0.1rem;
+    font-weight: bold;
+}
+
+
+#myForm fieldset p label, #myForm fieldset p input{
+    padding: 0.5rem;
+}
+
+
+#myForm fieldset button{
+    border: none;
+    padding: 1rem;
+    background-color: #adff2f;
+    border-radius: 0.2rem;
+}
+
+/*BASIC CSS FOR SUMMARY*/
+#summary{
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+#summary p{
+    border: 1px solid #000000;
+    width: 15%;
+    padding: 0.4rem;
+    text-align: center;
+}
+
+/*BASIC CSS FOR USERS*/
+.user{
+    border: 1px solid #000000;
+    border-radius: 0.2rem;
+    padding:0.5rem;
+    box-shadow: 0rem 0rem 0.5rem 0.5rem #bebbbb4d;
+}
+
+#userReminderStatus{
+    padding: 1rem;
+    margin:1rem;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.response{
+    padding: 0.5rem;;
+}
+
+.successful{
+    background-color: #adff2f;
+}
+
+.failed{
+    background-color: #ff6464;
+}

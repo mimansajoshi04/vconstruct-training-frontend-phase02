@@ -1,0 +1,21 @@
+{
+    "reminders": [
+        {
+            "reminder_name": "Update HRMS Portal",
+            "reminder_type": "Task"
+        },
+        {
+            "reminder_name": "Team Meeting Scheduled",
+            "reminder_type": "Meeting"
+        },
+        {
+            "reminder_name": "New Team Assignment",
+            "reminder_type": "Notification"
+        },
+        {
+            "reminder_name": "Submit Monthly Report",
+            "reminder_type": "Task"
+        }
+    ]
+
+}

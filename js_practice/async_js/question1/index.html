@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <script src="./question1.js" defer></script>
+    <title>Asynchronous Javascript</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header><h2>Question 01</h2></header>
+    <main>
+      <section id="getDataInputs">
+        <form id="myForm">
+          <fieldset class="inputFileData">
+            <legend>Mock Data</legend>
+            <p>
+              <label for="userMockData">Mock Data for User</label><br />
+              <input type="file" id="userMockData" accept=".json" required />
+            </p>
+
+            <p>
+              <label for="notificationMockData"
+                >Mock Data for Notifications</label
+              ><br />
+              <input
+                type="file"
+                id="notificationMockData"
+                accept=".json"
+                required
+              />
+            </p>
+          </fieldset>
+
+          <fieldset class="submitFileData">
+            <legend>Reminder</legend>
+            <button type="submit">Send Reminders</button>
+          </fieldset>
+        </form>
+      </section>
+      <section id="summary"></section>
+      <section id="userReminderStatus"></section>
+    </main>
+  </body>
+</html>
