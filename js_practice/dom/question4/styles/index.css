@@ -1,0 +1,40 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 2rem;
+  background: #f9f9f9;
+}
+
+#products, #recent-products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+article {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+ul{
+  list-style: none;
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  background-color: #54eeee;
+  border: none;
+  border-radius: 0.3rem;
+
+}
+
+#reset-btn{
+  margin:0.5rem;
+}
+
+footer{
+  margin:0.5rem;
+}
