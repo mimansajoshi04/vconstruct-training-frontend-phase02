@@ -1,0 +1,71 @@
+  html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  header{
+    padding:0.1rem;
+  }
+
+  body{
+    padding: 0.2rem;
+  }
+
+  #form-section{
+    border: 0.1rem solid #cfcece;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.2rem 0.2rem #d7d6d6;
+    padding: 1rem;
+    width: calc(0.75rem + 40vw);
+  }
+
+  #form-section fieldset{
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+
+  #form-section #form-data input{
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+    width: calc(0.75rem + 30vw);
+  }
+
+  .validation{
+    display: flex;
+  }
+
+  #name-validation{
+    white-space-collapse: collapse;
+  }
+
+  #form-section #form-action ul{
+    list-style: none;
+    display: flex;
+    width: calc(0.75rem + 10vw);
+    margin-left: calc(0.75rem - 4vw);
+    justify-content: space-evenly;
+  }
+
+  #form-action button{
+    padding: 0.5rem 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+  }
+
+  #submit-btn{
+    background-color: #adff2f;
+  }
+
+
+  #reset-btn{
+    background-color: #ff5f2f;
+  }
+
+
+  .success{
+    color: #73b50f;
+  }
+
+  .error{
+    color: #ff5f2f;
+  }

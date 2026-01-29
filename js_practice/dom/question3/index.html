@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>DOM Question 01</title>
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body>
+        <header>
+            <h2>
+                DOM Manipulation Question 01 - Dynamic Form Validation System
+            </h2>
+        </header>
+
+        <main>
+            <section id="form-section">
+                <h3>User Registration</h3>
+                <form id="form">
+                    <fieldset id="form-data">
+                        <legend>Fill in your details</legend>
+                        <p>
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" required>
+                            <p id="name-validation" class="field-validation"></p>
+                        </p>
+                        <p>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" required>
+                            <p id="email-validation" class="field-validation"></p>
+                        </p>
+                        <p>
+                            <label for="password">Password</label><br>
+                            <input type="password" id="password" required>
+                            <p id="password-validation" class="field-validation"></p>
+                        </p>
+                        <p>
+                            <label for="confirm-password">Confirm Password</label><br>
+                            <input type="password" id="confirm-password" required>
+                            <p id="confirm-password-validation" class="field-validation"></p>
+                        </p>
+                    </fieldset>
+
+                    <fieldset id="form-action">
+                        <legend>Please select your action</legend>
+                        <ul id="action">
+                            <li>
+                                <button type="submit" id="submit-btn">Submit</button>
+                            </li>
+                            <li>
+                                <button type="reset" id="reset-btn">Reset</button>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer id="footer">
+            <p>&copy; Mimansa Deovrat Joshi</p>
+        </footer>
+    </body>
+</html>
